@@ -1,6 +1,7 @@
 <?php
 session_start();
-
+header("Location: search.php");
+        exit();
 // LDAP-Konfiguration
 /*//$ldapServer = "ldap://your-ldap-server";
 $ldapBaseDN = "ou=Users,dc=example,dc=com";*///
