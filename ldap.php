@@ -4,7 +4,7 @@ session_start();
 // LDAP-Konfiguration
 /*//$ldapServer = "ldap://your-ldap-server";
 $ldapBaseDN = "ou=Users,dc=example,dc=com";*///
-echo $_SERVER["REQUEST_METHOD"] ;
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
