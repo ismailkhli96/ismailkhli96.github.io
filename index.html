@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login Page</title>
+    <!-- Bootstrap CSS (choose the version that matches your server) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light">
+	<nav class="navbar fixed-top navbar-expand-sm " style="background-color: #3b4858;">
+		<div class="container">
+			
+			<a href="#" class="navbar-brand mb-0 h6 nav-login">Login</a>
+			
+		</div>
+	</nav>
+	
+	
+
+    <div class="main-container mt-5" >
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card mt-5">
+                    <div class="card-header text-left" style="background-color: #3b4858;">
+                        
+						<!-- Logo and Login text in a grid system -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3 class="my-heading">Login</h3>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <img src="assets/img/logo.png" alt="Logo" height="33">
+                            </div>
+                        </div>
+                    </div>
+					
+                    <div class="card-body">
+                        <form action="ldap.php" method="post">
+                            <div class="form-group">
+                                <label for="username">Username:</label>
+                                <input type="text" class="form-control" placeholder="Username" id="username" name="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" class="form-control" placeholder="Password" id="password" name="password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" >Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (choose the version that matches your server) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
